@@ -1,0 +1,20 @@
+1. Go to https://console.firebase.google.com/
+2. Click get started button
+3. Click add new app
+4. Remove analytics
+5. Go to BUILD => HOSTING => get started
+6. Install (npm install -g firebase-tools)
+7. Login in firebase from console in your project directory (firebase login)
+8. Initialize Firebase after Login (firebase init) 
+    => Yes => spacebar => enter
+    => Hosting: config files for Firebase are
+    => Use an existing project
+    => Chose a name of firebase project from point 3
+    => Enter a path of public directory (dist folder afte build)
+    => SPA => yes => NO
+9. Build ur project (ng build)
+10. In filesystem.json in public key set a path to current build. 
+    In this project ("dist/angular-tg-app/browser")
+11. Make a deploy to firebase (firebase deploy)
+12. Recieve a link on app https://angular-tg-app-test-for-bot.web.app
+13. Recieve a link on hosting https://angular-tg-app-test-for-bot.web.app
