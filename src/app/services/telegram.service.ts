@@ -5,6 +5,10 @@ interface TgMainButton {
   show(): void;
   hide(): void;
   setText(text: string): void;
+  onClick(fn: Function): void;
+  offClick(fn: Function): void;
+  enable(): void;
+  disable(): void;
 }
 
 interface TgBackButton {
@@ -34,6 +38,10 @@ export class TelegramService {
 
   public get BackButton(): TgBackButton {
     return this.tg.BackButton;
+  }
+
+  public sendFeedback(sendFeedback: object): void {
+    this.tg.sendFeedback(JSON.stringify(sendFeedback));
   }
 
   public ready(): void {
