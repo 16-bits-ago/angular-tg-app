@@ -41,7 +41,7 @@ export class TelegramService {
   }
 
   public sendFeedback(sendFeedback: object): void {
-    this.tg.sendFeedback(JSON.stringify(sendFeedback));
+    this.tg.sendData(JSON.stringify(sendFeedback));
   }
 
   public ready(): void {
