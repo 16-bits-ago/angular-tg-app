@@ -12,5 +12,4 @@ export class ProductListComponent {
   @Input() title: string = '';
   @Input() subTitle: string = '';
   @Input() products: IProduct[] = [];
-
 }

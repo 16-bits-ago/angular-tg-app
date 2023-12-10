@@ -134,8 +134,8 @@ export const mockData: IProduct[] = [
 export class ProductsService {
   readonly products: IProduct[] = mockData.map(addDomainToLinkAndImage);
 
-  public getById(id: string): IProduct | null {
-    return this.products.find(p => p.id === id) || null;
+  public getById(id: string): IProduct {
+    return this.products.find(p => p.id === id)!;
   }
 
   public get byGroup() {
