@@ -14,8 +14,8 @@ export class ShopComponent {
   public products: ProductsService = inject(ProductsService);
 
   constructor() {
-    this.telegram.MainButton.show();
-    console.log(this.products.byGroup);
+    //this.telegram.MainButton.show();
+    this.telegram.BackButton.hide();
   }
 
 }
