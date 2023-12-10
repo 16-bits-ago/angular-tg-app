@@ -14,12 +14,14 @@ export class TelegramService {
   private window: Window | null;
   private tg: any;
 
-  constructor(@Inject(DOCUMENT) private _document: Document) { 
+  constructor(
+    @Inject(DOCUMENT) private _document: Document
+  ) { 
     this.window = this._document.defaultView;
     this.tg = (this.window as any)?.Telegram.WebApp;
   }
 
-  get MainButton(): TgButton {
+  public get MainButton(): TgButton {
     return this.tg.MainButton;
   }
 }
