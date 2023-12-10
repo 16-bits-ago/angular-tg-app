@@ -33,6 +33,6 @@ export class ProductComponent implements OnInit, OnDestroy {
   }
 
   private goBack(): void {
-    this.router.navigate(['']);
+    this.router.navigate(['/']);
   }
 }
