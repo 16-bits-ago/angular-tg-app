@@ -1,8 +1,12 @@
 <div class="centered">
     <h2 class="mb">{{ product.title }}</h2>
     <br />
-    <img [src]="product.image" [alt]="product.title">
+    <div class="product-image">
+        <img  [src]="product.image" [alt]="product.title">
+    </div>
     <p>{{ product.text }}</p>
     <p>{{ product.time }}</p>
-    <a [href]="product.link" target="_blank">Посмотреть курс</a>
+    <a class="product-link" [href]="product.link" target="_blank">
+        Посмотреть курс
+    </a>
 </div>

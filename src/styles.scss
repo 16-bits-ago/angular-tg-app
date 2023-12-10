@@ -82,8 +82,20 @@ hr {
 .product-image img{
     display: block;
     padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
 .product-info {
     padding: var(--main-padding);
+}
+
+.product-link {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid red;
+    text-decoration: none;
+    cursor: pointer;
 }
